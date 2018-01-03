@@ -49,6 +49,13 @@ class IncrementDisplay extends Component {
         return <p></p>;
     }
 
+    printLabel() {
+        if(this.props.payload > 0) {
+            return "Increment";
+        }
+
+        return "Decrement";
+    }
     render() {
         return (
             <div>
@@ -56,7 +63,7 @@ class IncrementDisplay extends Component {
                 <button 
                 className="increment_button btn btn-primary"
                 onClick={this.buttonClick}>
-                {this.props.buttonLabel}</button>
+                {this.printLabel()}</button>
             </div>
         );
     }

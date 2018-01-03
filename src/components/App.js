@@ -12,8 +12,8 @@ class App extends Component {
         <header className="App-header">
           <Spinner />
         </header>
-        <IncrementDisplay className="incre" buttonLabel="Increment" payload={1} number_disp={true}/>
-        <IncrementDisplay className="incre" buttonLabel="Decrement" payload={-1} number_disp={false}/>
+        <IncrementDisplay className="incre"  payload={1} number_disp={true}/>
+        <IncrementDisplay className="incre"  payload={-1} number_disp={false}/>
         <ResetButton className="reset"/>
       </div>
     );
